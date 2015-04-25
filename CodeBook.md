@@ -1,7 +1,7 @@
 ---
-title: "Getting and Cleaning Data - Project Week 3"
-author: "Author: elloumil"
-date: "Date: April 2015"
+Title: "Getting and Cleaning Data - Project Week 3"
+Author: "elloumil"
+Date: "April 2015"
 
 ---
 

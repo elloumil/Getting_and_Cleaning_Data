@@ -1,7 +1,7 @@
 ---
-title: "Getting and Cleaning Data - Project Week 3"
-author: "Author: elloumil"
-date: "Date: April 2015"
+Title: "Getting and Cleaning Data - Project Week 3"
+Author: "elloumil"
+Date: "April 2015"
 
 ---
 The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis.
@@ -23,5 +23,5 @@ data <- read.table("data_set_with_the_averages.txt")
 
 You will get a data frame with 180 observations of 68 variables (for 30 subjects and 6 activities).
 
-Remark:
+<font color="red">Remark:</font>
 Make sure that the extracted files are directly under "data_sets_project" folder.
