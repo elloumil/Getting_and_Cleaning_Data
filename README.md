@@ -2,7 +2,7 @@
 Title: "Getting and Cleaning Data - Project Week 3"
 Author: "elloumil"
 Date: "April 2015"
-
+output: html_document
 ---
 The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis.
 
@@ -26,3 +26,15 @@ data <- read.table("data_set_with_the_averages.txt")
 <br/><br/>
 *Remark:*
 Make sure that the extracted files are directly under "data\_sets\_project" folder.
+
+You can embed an R code chunk like this:
+
+```{r}
+summary(cars)
+```
+
+You can also embed plots, for example:
+
+```{r, echo=FALSE}
+plot(cars)
+```
