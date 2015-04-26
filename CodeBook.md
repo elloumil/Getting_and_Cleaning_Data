@@ -13,7 +13,7 @@ Original description: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Reco
 
 The R script "project.R" is the project's script for getting and cleaning the data. The following is the description of  the variables, the data, and any transformations or work performed to clean up the data:
 
-1. The script merges the follwing pairs of file:
+1- The script merges the follwing pairs of file:
 
 - "train/X_train.txt" and "test/X_test.txt" to get the data frame X
 - "train/subject_train.txt" and "test/subject_test.txt" to get the data frame Subject
@@ -23,7 +23,7 @@ X has 10299 observations of 561 variables
 Subject has 10299 observation of 1 variables
 Y has 10299 observation of 1 variables
 
-2. Then the script reads the file "features.txt" into the data frame features (features has 561 observation of 2 variables) and extracts only the measurements (indices_of_features) on the mean and standard deviation for each measurement.indices_of_features is a vector of 66 values.
+2- Then the script reads the file "features.txt" into the data frame features (features has 561 observation of 2 variables) and extracts only the measurements (indices_of_features) on the mean and standard deviation for each measurement.indices_of_features is a vector of 66 values.
 Then X gets updated and contains only the measurements on the mean and standard deviation for each measurement. X becomes a data frame of 10299 of 66 variables
 Then the script affects the proper names of columns to the data frame X (and cleans the names and puts it all in lowecase).
 
@@ -33,7 +33,7 @@ Result (first 6 columns' names of X):
 [1] "tbodyacc-mean-x" "tbodyacc-mean-y" "tbodyacc-mean-z" "tbodyacc-std-x"  "tbodyacc-std-y"  "tbodyacc-std-z" 
 ```
 
-3. The script reads the file activity_labels.txt and create a data frame activities (with 6 observations of 2 variables) which contains the list of possible activities and their IDs.
+3- The script reads the file activity_labels.txt and create a data frame activities (with 6 observations of 2 variables) which contains the list of possible activities and their IDs.
 Then applied a descriptive activity names to the data set Y for the names of activities, and a name "activity" to the column of Y.
 
 Here is a small overview what Y looks like (column name, first and last observations, and the activities' list):
@@ -71,7 +71,7 @@ Here is a small overview what Y looks like (column name, first and last observat
 151   walkingupstairs
 ```
 
-4. Then the script appropriately labels the data set with descriptive activity names.
+4- Then the script appropriately labels the data set with descriptive activity names.
 Then it merges the Y data frame containing features with X data frames containing activity labels and subject IDs. The result is saved as "merged_clean_data.txt". The cleaned_data data frame comtains 10299 observations of 68 variables.
 
 ```
@@ -83,7 +83,7 @@ Then it merges the Y data frame containing features with X data frames containin
 [4] "fbodybodygyromag-std"      "fbodybodygyrojerkmag-mean" "fbodybodygyrojerkmag-std"
 ```
 
-5.The script creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+5-The script creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 Resulting data frame (result) contains 180 observations of 68 variabless
 
 ```
