@@ -25,8 +25,8 @@ The R script "project.R" is the project's script for getting and cleaning the da
 2. Then the script reads the file "features.txt" into the data frame features (features has 561 observation of 2 variables) and extracts only the measurements (indices_of_features) on the mean and standard deviation for each measurement.indices_of_features is a vector of 66 values.<br/>
 Then X gets updated and contains only the measurements on the mean and standard deviation for each measurement. X becomes a data frame of 10299 of 66 variables<br/>
 Then the script affects the proper names of columns to the data frame X (and cleans the names and puts it all in lowecase).<br/>
-  Result (first 6 columns' names of X):
-    ```
+Result (first 6 columns' names of X):
+  ```
 >head(names(X))
 [1] "tbodyacc-mean-x" "tbodyacc-mean-y" "tbodyacc-mean-z" "tbodyacc-std-x"  "tbodyacc-std-y"  "tbodyacc-std-z" 
 ```
@@ -34,7 +34,7 @@ Then the script affects the proper names of columns to the data frame X (and cle
 3. The script reads the file activity_labels.txt and create a data frame activities (with 6 observations of 2 variables) which contains the list of possible activities and their IDs.<br/>
 Then applied a descriptive activity names to the data set Y for the names of activities, and a name "activity" to the column of Y.<br/>
 Here is a small overview what Y looks like (column name, first and last observations, and the activities' list):
-    ```
+  ```
 >names(Y)
 [1] "activity"
 >head(Y)
@@ -76,7 +76,7 @@ Then it merges the Y data frame containing features with X data frames containin
 
 5. The script creates a second, independent tidy data set with the average of each variable for each activity and each subject.<br/>
 Resulting data frame (result) contains 180 observations of 68 variabless.
-```
+  ```
 >head(names(result))
 [1] "subject"         "activity"        "tbodyacc-mean-x" "tbodyacc-mean-y" "tbodyacc-mean-z"
 [6] "tbodyacc-std-x" 
@@ -84,5 +84,5 @@ Resulting data frame (result) contains 180 observations of 68 variabless.
 [1] "fbodybodyaccjerkmag-mean"  "fbodybodyaccjerkmag-std"   "fbodybodygyromag-mean"    
 [4] "fbodybodygyromag-std"      "fbodybodygyrojerkmag-mean" "fbodybodygyrojerkmag-std"
 ```
-The first column of the data frame "result" contains subject IDs, the second column contains activity names, and then the rest of columns are the mean values.<br/>
+  The first column of the data frame "result" contains subject IDs, the second column contains activity names, and then the rest of columns are the mean values.<br/>
 The resulting data frame is saved in the file "data_set_with_the_averages.txt".
