@@ -26,15 +26,3 @@ data <- read.table("data_set_with_the_averages.txt")
 <br/><br/>
 *Remark:*
 Make sure that the extracted files are directly under "data\_sets\_project" folder.
-
-You can embed an R code chunk like this:
-
-```{r}
-summary(cars)
-```
-
-You can also embed plots, for example:
-
-```{r, echo=FALSE}
-plot(cars)
-```
