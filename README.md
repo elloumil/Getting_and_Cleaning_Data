@@ -23,5 +23,5 @@ data <- read.table("data_set_with_the_averages.txt")
 
 You will get a data frame with 180 observations of 68 variables (for 30 subjects and 6 activities).
 
-<font color="red">Remark:</font>
+*Remark:*
 Make sure that the extracted files are directly under "data_sets_project" folder.

@@ -14,6 +14,7 @@ Original description: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Reco
 The R script "project.R" is the project's script for getting and cleaning the data. The following is the description of  the variables, the data, and any transformations or work performed to clean up the data:
 
 1. The script merges the follwing pairs of file:
+
 - "train/X_train.txt" and "test/X_test.txt" to get the data frame X
 - "train/subject_train.txt" and "test/subject_test.txt" to get the data frame Subject
 - "train/y_train.txt" and "test/y_test.txt" to get the data frame Y
